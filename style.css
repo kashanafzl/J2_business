@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.mainnavbardiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  /* margin-inline: 6rem; */
+  padding-inline: 8rem;
+  box-shadow: 0px 3px 3px rgb(248, 248, 248);
+  border-bottom: 1px solid rgb(248, 248, 248);
+
+}
+.heading {
+  color: #88ceea;
+  font-size: 2rem;
+}
+
+.secheading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 100px;
+}
+
+.secheading span {
+  color: black;
+  font-size: 2rem;
+}
+
+.menu-icon {
+  font-size: 3rem;
+  cursor: pointer;
+  position: fixed;
+  top: 2rem;
+  padding: 1rem 1.5rem;
+  background: rgb(4, 20, 170);
+  color: #fff;
+  right: 8rem;
+  z-index: 5;
+}
+
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #88ceea;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 6rem;
+  z-index: 1;
+}
+
+.side-menu a {
+  padding: 0.8rem 0.8rem 0.8rem 3.2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  color: #f1f1f1;
+}
+
+.side-menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 8rem;
+  font-size: 5rem;
+  display: none;
+  z-index: 13;
+}
+
+.phoneimg {
+  width: 5rem;
+}
+
+.herosection {
+  padding-inline: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.herosec1 h1,
+.herosec1 h2,
+.herosec1 h3 {
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: 0.2rem solid #027b91;
+  width: fit-content;
+}
+
+.peopleimg {
+  width: 100%;
+  max-width: 55rem;
+}
+
+.herospan h4 {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.herospan span {
+  color: rgb(227, 230, 72);
+  padding-top: 2rem;
+}
+
+.bgcolorandtext {
+  background-color: #003d71;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+
+.allbtnmaindiv {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.infomationmdiv {
+  margin: 4rem 0;
+}
+
+.infomationmdiv h2 {
+  text-align: center;
+  border-bottom: 0.2rem solid #027b91;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 4rem;
+  padding-top: 3rem;
+}
+
+.maindatadiv {
+  background-color: rgb(241, 241, 243);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 4rem 2rem;
+}
+
+.informationdivtext h5 {
+  color: #027b91;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.informationdivtext img {
+  width: 3rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.informationdivtext p {
+  font-size: 2rem;
+  border-bottom: 0.2rem dotted gray;
+  padding-bottom: 1rem;
+}
+
+.viewbtn {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.viewbtn button {
+  background-color: #005faf;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+}
+
+.maindivtwoperson {
+  display: flex;
+  gap: 0rem;
+  flex-wrap: wrap;
+  padding-inline: 6rem;
+}
+
+.img-container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.img-container img {
+  /* max-width: 100%; */
+  height: auto;
+}
+
+.text-container {
+  flex: 2;
+}
+
+.text-container p {
+  font-size: 1.6rem;
+  padding-top: 5rem;
+}
+
+.infomationmdiv {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.infomationmdiv h2 {
+  font-size: 3rem;
+  border-bottom: 0.2rem solid #027b91;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.threepdiv {
+  text-align: center;
+}
+
+.threepdiv p {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .maindivtwoperson {
+    padding: 1rem;
+  }
+
+  .text-container p {
+    padding-top: 2rem;
+  }
+
+  .infomationmdiv h2 {
+    font-size: 2.5rem;
+  }
+
+  .threepdiv p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .maindivtwoperson {
+    padding: 0.5rem;
+    
+  }
+
+  .text-container p {
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    padding-inline: 2rem;
+  }
+
+  .infomationmdiv h2 {
+    font-size: 2rem;
+  }
+
+  .threepdiv p {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .mainnavbardiv {
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .secheading span {
+    font-size: 1.5rem;
+  }
+
+  .menu-icon {
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .side-menu a {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  .herosection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .herosec1 h1,
+  .herosec1 h2,
+  .herosec1 h3 {
+    font-size: 2rem;
+  }
+
+  .peopleimg {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .herospan h4 {
+    font-size: 1.5rem;
+  }
+
+  .allbtnmaindiv {
+    justify-content: center;
+  }
+
+  .infomationmdiv h2 {
+    font-size: 3rem;
+  }
+
+  .maindatadiv {
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+  .informationdivtext h5 {
+    font-size: 1.8rem;
+  }
+
+  .informationdivtext p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainnavbardiv {
+    padding: 1rem 2rem;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .secheading span {
+    font-size: 1.2rem;
+  }
+
+  .menu-icon {
+    font-size: 1.8rem;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .side-menu a {
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .herosection {
+    padding: 1rem;
+  }
+
+  .herosec1 h1,
+  .herosec1 h2,
+  .herosec1 h3 {
+    font-size: 1.5rem;
+  }
+
+  .herospan h4 {
+    font-size: 1.2rem;
+  }
+
+  .infomationmdiv h2 {
+    font-size: 2.5rem;
+  }
+
+  .maindatadiv {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+
+  .informationdivtext h5 {
+    font-size: 1.5rem;
+  }
+
+  .informationdivtext p {
+    font-size: 1.5rem;
+  }
+}
